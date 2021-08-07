@@ -39,8 +39,8 @@ and set its TTL at the same time in a single atomic operation:
     <a href="#run">TTL resource:lock</a> => 5
 </code></pre>
 
-It is also possible to cancel the time to live of a key removing the expire and
-making the key permanent again.
+It is also possible to cancel the time to live of a key removing the expire using
+[EXPIRE](#help), making the key permanent again.
 
 <pre><code>
     <a href="#run">SET resource:lock "Redis Demo 3" EX 5</a>
